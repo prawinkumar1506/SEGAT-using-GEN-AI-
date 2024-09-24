@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Engineering Graphics Assessment Tool (SEGAT)</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/style.css">
+
+  <!-- Include Konva.js -->
+  <script src="https://cdn.jsdelivr.net/npm/konva@8.2.0/konva.min.js"></script>
+</head>
+<body class="bg-gray-100">
+
+<div class="container mx-auto p-5">
+  <h1 class="text-3xl font-bold text-center mb-5">SEGAT - Smart Engineering Graphics Assessment Tool</h1>
+
+  <div id="chat-container" class="border border-gray-300 bg-white rounded-lg shadow-lg p-5 max-h-96 overflow-y-auto mb-5">
+    <!-- Chat messages will be appended here -->
+  </div>
+
+  <div class="flex mb-5">
+    <input type="text" id="chat-input" class="flex-grow border border-gray-300 rounded-l-lg p-2" placeholder="Type your question here...">
+    <button id="send-btn" class="bg-blue-500 text-white rounded-r-lg p-2 hover:bg-blue-600 transition">Send</button>
+  </div>
+
+  <!-- Canvas for drawing engineering graphics -->
+  <div id="canvas-container" class="border border-gray-300 bg-white rounded-lg shadow-lg p-5 mb-5">
+    <div id="canvas" style="width: 100%; height: 400px;"></div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="src/js/script.js"></script>
+</body>
+</html>

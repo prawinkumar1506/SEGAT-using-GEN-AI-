@@ -1,0 +1,21 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.message {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.user {
+    background-color: #cce5ff;
+    align-self: flex-end;
+}
+
+.seg {
+    background-color: #d4edda;
+    align-self: flex-start;
+}

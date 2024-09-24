@@ -1,0 +1,21 @@
+{
+  "name": "SEGAT",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "prettier": "^3.3.1",
+    "vite": "^5.1.6"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.19.0",
+    "axios": "^1.7.7",
+    "openai": "^4.63.0"
+  }
+}
