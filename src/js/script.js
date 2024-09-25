@@ -10,7 +10,7 @@ document.getElementById('send-btn').addEventListener('click', async function () 
 
   try {
     // Call Gemini AI API with the user's question
-    const response = await axios.post('https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyDwVflP2r8_Tb3EEYgugA3RMyokkjUSqig', {
+    const response = await axios.post('https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=YOUR_API_KEY', {// REPLACE WITH YOUR API KEY
       contents: [{ parts: [{ text: `Provide a step-by-step algorithm for solving the following engineering graphics problem: ${input}` }] }]
     }, {
       headers: {
